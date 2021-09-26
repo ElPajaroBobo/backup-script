@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+timestamp=$(date +%F)
+hostname=$(uname -n)
+# source https://github.com/lzkelley/bkup_rpimage
+/usr/bin/backup_rpi start -zdc '/cloud/images/'$hostname'_image_'$timestamp'.img'
